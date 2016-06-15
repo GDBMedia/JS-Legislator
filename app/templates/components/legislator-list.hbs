@@ -1,0 +1,17 @@
+<div class="card hoverable">
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">{{legislator.first_name}} {{legislator.last_name}}<i class="material-icons right">more_vert</i></span>
+    <p>Email: {{legislator.oc_email}}</p>
+    <br>
+    <p>Party: {{fullParty}}</p>
+  </div>
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">{{legislator.first_name}} {{legislator.last_name}}<i class="material-icons right">close</i></span>
+    <p>Phone: {{legislator.phone}}</p>
+    <p>State: {{legislator.state_name}}</p>
+    <p>Twitter: @{{legislator.twitter_id}}</p>
+  </div>
+  <div class="card-action">
+    {{#link-to 'legislator' legislator.bioguide_id}}<a>About Me</a>{{/link-to}}
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<h1 class="center">{{model.legislator.first_name}} {{model.legislator.last_name}}</h1>
+{{#each model.committees as |committee|}}
+<div class="card hoverable">
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">{{committee.name}}<i class="material-icons right">more_vert</i></span>
+    <p>Chamber: {{committee.chamber}}</p>
+    <br>
+    {{#if committee.subcommittee}}
+      <p>Subcommittee</p>
+    {{else}}
+      <p>Committee</p>
+    {{/if}}
+  </div>
+  <div class="card-action">
+    <a>About Me</a>
+  </div>
+</div>
+{{/each}}

@@ -1,0 +1,39 @@
+<header>
+<nav class="deep-orange darken-3">
+  <div class="nav-wrapper">
+    <a class="brand-logo center">Legislators</a>
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <li><a>{{#link-to 'index'}}Home{{/link-to}}</a></li>
+    </ul>
+  </div>
+</nav>
+</header>
+
+<main>
+  <div class="container">
+    {{outlet}}
+  </div>
+</main>
+
+<footer class="page-footer deep-orange darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Legislators</h5>
+            <p class="grey-text text-lighten-4">Thank you for using our page</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3">{{#link-to 'index'}}Home{{/link-to}}</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2016 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+  </footer>
