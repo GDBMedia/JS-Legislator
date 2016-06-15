@@ -1,0 +1,19 @@
+
+<div class="card hoverable">
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">{{bill.official_title}}<i class="material-icons right">more_vert</i></span>
+    <p>Sponser: {{#link-to 'legislator' bill.sponsor_id}}{{bill.sponsor.first_name}} {{bill.sponsor.last_name}}{{/link-to}}</p>
+    <br>
+    <p>Chamber: {{bill.chamber}}</p>
+    <p>Introduced: {{introduction}}</p>
+  </div>
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">{{bill.official_title}}<i class="material-icons right">close</i></span>
+    <p>Pages: {{bill.last_version.pages}}</p>
+    <p>Last Action: {{lastAction}}</p>
+    <p>Number: {{bill.number}}</p>
+  </div>
+  <div class="card-action">
+    <a href={{bill.urls.congress}} target="_blank">Website</a>
+  </div>
+</div>

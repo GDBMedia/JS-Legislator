@@ -4,6 +4,7 @@
     <p>Email: {{legislator.oc_email}}</p>
     <br>
     <p>Party: {{fullParty}}</p>
+    <p>Term End Year: {{endyear}}</p>
   </div>
   <div class="card-reveal">
     <span class="card-title grey-text text-darken-4">{{legislator.first_name}} {{legislator.last_name}}<i class="material-icons right">close</i></span>
@@ -13,5 +14,7 @@
   </div>
   <div class="card-action">
     {{#link-to 'legislator' legislator.bioguide_id}}<a>About Me</a>{{/link-to}}
+    <a href={{legislator.website}} target="_blank">Website</a>
+    <a href={{legislator.contact_form}} target="_blank">Contact Me</a>
   </div>
 </div>
